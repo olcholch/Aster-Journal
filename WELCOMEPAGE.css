@@ -1,0 +1,68 @@
+body {
+    background-color: black;
+}
+
+.playful span {
+  position: relative;
+  color: white;
+  animation: scatter 1.75s infinite;
+}
+
+.playful span:nth-child(2n) {
+  color: white;
+  animation-delay: 0.3s;
+}
+
+.playful span:nth-child(3n) {
+  color: white;
+  animation-delay: 0.15s;
+}
+
+.playful span:nth-child(5n) {
+  color: white;
+  animation-delay: 0.4s;
+}
+
+.playful span:nth-child(7n), .playful span:nth-child(11n) {
+  color: white;
+  animation-delay: 0.25s;
+}
+
+@keyframes scatter {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -10px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+h1 {
+    font-size: 65px;
+    text-transform: uppercase;
+    font-family: monospace;
+    font-weight: normal;
+    display: block;
+    width: 50%; 
+    max-width: 80vw;
+    height: 0px;
+    text-align: center;
+    margin: calc(40vh - 3rem) auto;
+}
+
+.loginButton {
+  padding: 5px 10px;
+  font-size: 16px;
+  margin-left: 48%;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: none;
+}
+
+.loginButton:hover {
+  background-color: red;
+}

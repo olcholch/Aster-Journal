@@ -1,0 +1,109 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://images.hdqwalls.com/wallpapers/abstract-minimalism-stars-sky-t3.jpg);
+    margin: 0;
+}
+
+.image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border: none;
+    border-radius: 90px;
+    background-color: rgb(30, 52, 71);
+    margin-bottom: 20px;
+    padding: 1.9rem;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 350px;
+    width: 100%;
+    background-color: black;
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 0 10px 1px rgb(46, 78, 105);
+    margin-bottom: 20px;
+    margin-left: 100px;
+    margin-right: 100px
+}
+
+.container:hover {
+    box-shadow: 0 0 20px 3px rgba(0, 0, 0);
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    height: 10rem;
+    width: 100%;
+    top: 0;
+    background-image: linear-gradient(0deg, rgb(21, 55, 84) 1%, #2b77ad);
+    border-radius: 20px 20px 0 0;
+}
+
+.Name {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.Field {
+    font-size: 17px;
+    font-weight: 100;
+    color: rgb(46, 78, 105);
+    margin: 4px 0 15px 0;
+}
+
+.Description {
+    font-family: 'Lucida Sans';
+    font-size: 15px;
+    text-align: left;
+    color: white;
+}
+
+button {
+    font-size: 15px;
+    color: black;
+    font-weight: bolder;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(21, 55, 84);
+    padding-left: 5px;
+    margin-top: 10px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.back-button-container {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.back-button {
+    font-size: 15px;
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(42, 85, 122);
+    padding: 5px 10px;
+    margin-bottom: 20px;
+}
+
+.back-button:hover {
+    opacity: 0.8;
+}
+
